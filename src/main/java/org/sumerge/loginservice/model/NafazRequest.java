@@ -1,14 +1,12 @@
 package org.sumerge.loginservice.model;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Builder
-@AllArgsConstructor
 @NoArgsConstructor
-public class NafazResponse {
-    private String OTP;
+@AllArgsConstructor
+public class NafazRequest {
+    private String callbackURL;
 }
