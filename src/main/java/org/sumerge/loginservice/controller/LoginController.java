@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.sumerge.loginservice.model.nafaz_response.NafazResponse;
 import org.sumerge.loginservice.service.LoginService;
+
+import java.util.logging.Logger;
+
 @RestController
 @RequiredArgsConstructor
 public class LoginController {
@@ -14,6 +17,7 @@ public class LoginController {
     @PostMapping("/login")
     public ResponseEntity<NafazResponse> login(@RequestBody String nationalId) {
         NafazResponse nafazResponse = loginService.login(nationalId);
+
             return  ResponseEntity.ok(nafazResponse);
 
     }
