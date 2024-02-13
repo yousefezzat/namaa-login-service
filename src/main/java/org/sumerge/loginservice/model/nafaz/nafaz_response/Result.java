@@ -1,4 +1,4 @@
-package org.sumerge.loginservice.model.nafaz_response;
+package org.sumerge.loginservice.model.nafaz.nafaz_response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

@@ -3,11 +3,8 @@ package org.sumerge.loginservice.client;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 import org.sumerge.loginservice.config.NafazClientConfig;
-import org.sumerge.loginservice.controller.LoginController;
-import org.sumerge.loginservice.model.NafazRequest;
-import org.sumerge.loginservice.model.nafaz_response.NafazResponse;
-
-import java.util.logging.Logger;
+import org.sumerge.loginservice.model.nafaz.nafaz_request.NafazRequest;
+import org.sumerge.loginservice.model.nafaz.nafaz_response.NafazResponse;
 
 @FeignClient(name = "nafaz",url = "${nafaz-service.url}", configuration = NafazClientConfig.class)
 public interface NafazClient {
